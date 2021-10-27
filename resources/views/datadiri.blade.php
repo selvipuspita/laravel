@@ -19,6 +19,6 @@
     @endif
     @if ($bb != null)
     berat badan : {{$bb}} <br>
-    @endif 
+    @endif j
 </body>
 </html>
