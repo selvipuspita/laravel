@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MyController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -142,3 +143,8 @@ Route::get ('modelsuplier' , function() {
     $query = App\Models\suplier::all();
     return $query;
 });
+
+Route::get ('datasiswa' , [MyController::class , 'index']); 
+Route::get ('posts' , [MyController::class , 'posting']); 
+Route::get ('pembelian' , [MyController::class , 'pembelian']); 
+Route::get ('singlepembelian/{id}' , [MyController::class , 'singlepembelian']); 
